@@ -9,4 +9,14 @@ public class FunRestController {
     public String sayHello() {
         return "Hello World From Spring Boot";
     }
+
+    @GetMapping("/workout")
+    public String getDailyWorkOut() {
+        return "Run a hard 5k !";
+    }
+
+    @GetMapping("/fortune")
+    public String getDailyFortune() {
+        return "Today is your lucky day.";
+    }
 }
