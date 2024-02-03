@@ -10,7 +10,6 @@ public class DemoController {
     // define a private field for the dependency
     private Coach myCoach;
 
-    // define a Constructor for dependency injection
     @Autowired
     public void setCoach(Coach theCoach) {
         myCoach = theCoach;
