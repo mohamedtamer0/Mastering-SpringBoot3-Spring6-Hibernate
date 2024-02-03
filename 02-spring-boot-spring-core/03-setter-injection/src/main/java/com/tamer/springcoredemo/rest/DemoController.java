@@ -12,8 +12,8 @@ public class DemoController {
 
     // define a Constructor for dependency injection
     @Autowired
-    public DemoController(Coach myCoach) {
-        this.myCoach = myCoach;
+    public void setCoach(Coach theCoach) {
+        myCoach = theCoach;
     }
 
 
