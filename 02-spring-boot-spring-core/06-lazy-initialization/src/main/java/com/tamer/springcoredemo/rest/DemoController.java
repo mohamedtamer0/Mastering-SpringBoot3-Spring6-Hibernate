@@ -1,6 +1,6 @@
 package com.tamer.springcoredemo.rest;
 
-import com.luv2code.springcoredemo.common.Coach;
+import com.tamer.springcoredemo.Common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
