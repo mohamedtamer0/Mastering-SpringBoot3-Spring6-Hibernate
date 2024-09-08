@@ -1,29 +1,5 @@
 # Master-SpringBoot3-Spring6-Hibernate
 
-
-![UC-46a8ee71-1082-45bf-9156-48fe09e0478a](https://github.com/mohamedtamer0/mohamedtamer0/assets/51374446/888847ad-380b-40ea-98e2-1ed180cbc5d7)
-
-
-## Spring Boot
-- What is Spring Boot?
-- Creating a Project with Spring Boot Initializr
-- Develop a REST API Controller with Spring Boot
-- Explore the Spring Boot Project Structure
-- Leverage Spring Boot Starters - A Curated List of Dependencies
-- Inherit Defaults with Spring Boot Starter Parents
-- Automatically Restart with Spring Boot Dev Tools
-- Add DevOps functionality with Spring Boot Actuator Endpoints
-- Secure Spring Boot Actuator Endpoints
-- Run Spring Boot apps from the Command-Line
-- Use the Spring Boot Maven Plugin to package and run Spring Boot apps
-- Inject custom application properties into a Spring Boot REST Controller
-
-## Maven
-- Simplify your build process with Maven
-- Create Maven POM files and add dependencies
-- Run Maven builds from the IDE
-- Use Maven during the development of Real-Time Projects for Spring Boot MVC, Spring Boot Security, Spring Boot REST API and Hibernate/JPA
-
 ## Spring Core
 - Build a complete Spring MVC and Hibernate/JPA CRUD Project ... all from scratch
 - Set up your Spring Boot and Hibernate/JPA
