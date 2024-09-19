@@ -30,7 +30,7 @@ public class CruddemoApplication {
 
 			// deleteInstructorDetail(appDAO);
 
-			createInstructorWithCourses(appDAO);
+			// createInstructorWithCourses(appDAO);
 
 			findInstructorWithCourses(appDAO);
 
