@@ -4,6 +4,7 @@ import com.tamer.cruddemo.dao.AppDAO;
 import com.tamer.cruddemo.entity.Course;
 import com.tamer.cruddemo.entity.Instructor;
 import com.tamer.cruddemo.entity.InstructorDetail;
+import com.tamer.cruddemo.entity.Review;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,33 +23,29 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 
 		return runner -> {
-			// createInstructor(appDAO);
 
-			// findInstructor(appDAO);
-
-			// deleteInstructor(appDAO);
-
-			// findInstructorDetail(appDAO);
-
-			// deleteInstructorDetail(appDAO);
-
-			// createInstructorWithCourses(appDAO);
-
-			// findInstructorWithCourses(appDAO);
-
-			// findCoursesForInstructor(appDAO);
-
-			// findInstructorWithCoursesJoinFetch(appDAO);
-
-			// updateInstructor(appDAO);
-
-			// updateCourse(appDAO);
-
-			// deleteInstructor(appDAO);
-
-			deleteCourse(appDAO);
-
+			createCourseAndReviews(appDAO);
 		};
+	}
+
+	private void createCourseAndReviews(AppDAO appDAO) {
+
+		// create a course
+		Course tempCourse = new Course("Pacman - How To Score One Million Points");
+
+		// add some reviews
+		tempCourse.addReview(new Review("Great course ... loved it!"));
+		tempCourse.addReview(new Review("Cool course, job well done."));
+		tempCourse.addReview(new Review("What a dumb course, you are an idiot!"));
+
+		// save the course ... and leverage the cascade all
+		System.out.println("Saving the course");
+		System.out.println(tempCourse);
+		System.out.println(tempCourse.getReviews());
+
+		appDAO.save(tempCourse);
+
+		System.out.println("Done!");
 	}
 
 	private void deleteCourse(AppDAO appDAO) {
